@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="01bf6139-284d-4e7c-a965-fd70468af160" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pageObjects/inboxPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pageObjects/inboxPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_new_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_new_email.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +72,7 @@
       <recent name="C:\Users\tomas\PycharmProjects\Gmail\datax" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_new_email.test_open_dialog">
+  <component name="RunManager" selected="Python tests.Python tests for test_new_email.test_pick_contact">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Gmail" />
       <option name="ENV_FILES" value="" />
@@ -230,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_new_email.test_pick_contact" />
         <item itemvalue="Python tests.Python tests for test_new_email.test_open_dialog" />
         <item itemvalue="Python tests.Python tests for test_login.test_login" />
         <item itemvalue="Python tests.Python tests for test_new_email.test_add_attachment" />
         <item itemvalue="Python tests.Python tests for test_new_email.test_logout" />
-        <item itemvalue="Python tests.Python tests for test_new_email.test_pick_contact" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +251,7 @@
       <updated>1705953370895</updated>
       <workItem from="1705953383005" duration="2390000" />
       <workItem from="1705956835017" duration="29238000" />
-      <workItem from="1706256256112" duration="821000" />
+      <workItem from="1706256256112" duration="1826000" />
     </task>
     <servers />
   </component>
