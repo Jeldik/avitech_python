@@ -1,24 +1,12 @@
 import pytest
-from playwright.sync_api import Playwright, sync_playwright, expect
-
-from tests.pageObjects.pageManager import PageManager
+from playwright.sync_api import Playwright
 
 
 @pytest.fixture(scope="function")
-def set_up(playwright: Playwright) -> None:
+def set_up_tear_down(playwright: Playwright) -> None:
     browser = playwright.firefox.launch(headless=False)
-    context = browser.new_context()
+    context = browser.new_context(storage_state='../data/storage.json')
     page = context.new_page()
-    pm = PageManager(page)
-
     page.goto("https://mail.google.com/mail/")
 
-    pm.signInPage.locator_email_input.fill('jeldicek@gmail.com')
-    pm.signInPage.locator_next_btn.click()
-    pm.signInPage.locator_password_input.fill('Jelinek81')
-    pm.signInPage.locator_password_next_btn.click()
-
     yield page
-
-    context.close()
-    browser.close()
