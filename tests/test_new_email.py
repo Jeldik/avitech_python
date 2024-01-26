@@ -19,14 +19,6 @@ def test_pick_contact(set_up_tear_down) -> None:
     expect(pm.inboxPage.locator_selected_contact).to_be_visible()
 
 
-def test_logout(set_up_tear_down) -> None:
-    pm = PageManager(set_up_tear_down)
-    pm.inboxPage.locator_profile.click()
-    pm.inboxPage.locator_logout.click()
-
-    expect(pm.inboxPage.page.locator('body')).to_contain_text('Sign in')
-
-
 def test_add_attachment(set_up_tear_down) -> None:
     pm = PageManager(set_up_tear_down)
     pm.inboxPage.locator_new_message.click()
@@ -34,3 +26,11 @@ def test_add_attachment(set_up_tear_down) -> None:
     set_up_tear_down.reload()
 
     pm.inboxPage.page.get_by_text("(16 kB)")
+
+
+def test_logout(set_up_tear_down) -> None:
+    pm = PageManager(set_up_tear_down)
+    pm.inboxPage.locator_profile.click()
+    pm.inboxPage.locator_logout.click()
+
+    expect(pm.inboxPage.page.locator('body')).to_contain_text('Sign in')
